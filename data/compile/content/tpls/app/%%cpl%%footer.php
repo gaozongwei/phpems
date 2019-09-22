@@ -3,8 +3,7 @@
 		<div class="main itembox">
 			<div class="col-xs-12">
 				<ul class="list-unstyled">
-					<li class="text-center"><a href="">PHPEMS在线模拟考试系统 著作权登记号：2013 SR 113189</a></li>
-					<li class="text-center"><a href="">Copyright © phpems.net  <?php echo date('Y',TIME); ?></a></li>
+					<li class="text-center"><a href="">山东职业学院在线模拟考试系统</a></li>
 				</ul>
 			</div>
 		</div>

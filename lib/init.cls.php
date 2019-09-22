@@ -9,7 +9,7 @@ class ginkgo
 	public $L = array();
 	public $I = array('app'=>array(),'core'=>array());
 	public $app;
-	public $defaultApp = 'content';
+	public $defaultApp = 'exam';
 
 	//对象工厂
 	public function make($G,$app = NULL)
