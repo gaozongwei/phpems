@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PHPEMS模拟考试系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="app/core/styles/js/fastclick.js"></script>
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/mskin.css" />
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/animations.css" />
+<script src="app/core/styles/js/jquery.min.js"></script>
+<script src="app/core/styles/js/swiper.jquery.js"></script>
+<script src="app/core/styles/js/jquery.json.js"></script>
+<script src="app/core/styles/js/jquery.mobile.custom.min.js"></script>
+<script src="app/core/styles/js/bootstrap.min.js"></script>
+<script src="app/core/styles/js/all.fine-uploader.min.js"></script>
+<script src="app/core/styles/js/ckeditor/js/MathJax.js?config=TeX-AMS_HTML"></script>
+<script src="app/core/styles/js/jquery.media.js"></script>
+<script src="app/core/styles/js/jquery.mobile.custom.min.js"></script>
+<script src="app/core/styles/js/mplugin.js"></script>
+<script src="app/exam/styles/js/mplugin.js"></script>
+</head><body>
+<div id="content">
+    <div class="pages" id="page1">
+    	<div class="pagecontent">
+		<header class="container-fluid" style="background-color:#337AB7;">
+			<h5 class="text-center">
+				<em style="font-size:2rem;" class="pull-left glyphicon glyphicon-home"></em>
+				<span class="ttlo">PHPEMS模拟考试系统</span>
+				<a style="font-size:2rem;color:#FFFFFF;" href="index.php?user-phone" class="pull-right glyphicon glyphicon-user ajax" data-target="user" data-page="user"></a>
+			</h5>
+		</header>
+    	<div class="container-fluid" style="overflow:hidden;margin-top:1rem;margin-bottom:0.4rem;">
+			<div class="swiper-container">
+	    		<div class="swiper-wrapper">
+		    			    		</div>
+	    		<div class="swiper-pagination"></div>
+	    	</div>
+		</div>
+		<div class="container-fluid">
+			<div style="clear:both;overflow:hidden;" class="items">
+				<div class="col-xs-3" style="padding:0.2rem;">
+					<div class="text-center" style="padding:0.2rem;padding-top:1.5rem;">
+						<a href="index.php?exam-phone-index" class="ajax" data-page="mybasic" data-target="mybasic">
+							<p>
+								<img src="app/core/styles/img/exam.png" style="width:92%;"/>
+							</p>
+							<h5>在线考试</h5>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-3" style="padding:0.2rem;">
+					<div class="text-center" style="padding:0.2rem;padding-top:1.5rem;">
+						<a class="ajax" href="index.php?course-phone-index" data-target="course" data-page="course">
+							<p>
+								<img src="app/core/styles/img/video.png" style="width:92%;"/>
+							</p>
+							<h5>视频课程</h5>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-3" style="padding:0.2rem;">
+					<div class="text-center" style="padding:0.2rem;padding-top:1.5rem;">
+						<a href="index.php?certificate-phone" data-target="certificate" data-page="certificate" class="ajax">
+							<p>
+								<img src="app/core/styles/img/t3.png" style="width:92%;"/>
+							</p>
+							<h5>证书申请</h5>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-3" style="padding:0.2rem;">
+					<div class="text-center" style="padding:0.2rem;padding-top:1.5rem;">
+						<a href="index.php?content-phone-category" data-target="contentcategory" data-page="contentcategory" class="ajax">
+							<p>
+								<img src="app/core/styles/img/news.png" style="width:92%;"/>
+							</p>
+							<h5>考试资讯</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+			<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+				<span class="pull-left" style="width:35%"><hr /></span>
+				<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;">热门考场</span>
+				<span class="pull-right" style="width:35%"><hr /></span>
+			</h4>
+			<div style="clear:both;padding:0px;margin-bottom:1rem;overflow: hidden;">
+								<div class="col-xs-6" style="padding:3px;">
+					<div style="background-color:#FFFFFF;padding:7px">
+						<a href="index.php?exam-phone-index-setCurrentBasic&basicid=1" class="ajax" data-target="basic" data-page="basic">
+							<img src="app/core/styles/images/noimage.gif" style="width:100%;"/>
+						</a>
+						<h5 class="text-center">
+							<a href="index.php?exam-phone-index-setCurrentBasic&basicid=1" class="ajax" data-target="basic" data-page="basic">1</a>
+						</h5>
+					</div>
+				</div>
+							</div>
+			<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;">视频课程</span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:0px;margin-bottom:1rem;">
+							</div>
+									<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;">帮助信息</span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+							</div>
+												<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;">考试资料</span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+							</div>
+																		<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;">考试信息</span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+							</div>
+								</div>
+		</div>
+		<script>
+			$(function(){
+				var mySwiper = new Swiper('.swiper-container',{
+					"pagination":".swiper-pagination",
+					"loop":true,
+					"autoplay": 3000,
+					"observer":true,
+					"observeParents":true
+				});
+			});
+		</script>
+		<footer class="container-fluid text-center" style="background-color:#337AB7;">
+	<p style="padding:1rem;">
+		PHPEMS模拟考试系统 著作权登记号：2013 SR 113189<br />
+		Copyright © phpems.net 2015-2017
+	</p>
+</footer>    </div>
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+	wx.config({
+        debug: false,
+        appId: 'wx0f2a632abf082e60',
+        timestamp: 1569152613,
+		nonceStr: 'uXT2bxumMnltpF4W',
+        signature: 'f5a0b9515735ac6da20ffafe52e70445618335d2',
+        jsApiList:  ['onMenuShareTimeline','onMenuShareAppMessage']
+    });
+</script>
+</body>
+</html>

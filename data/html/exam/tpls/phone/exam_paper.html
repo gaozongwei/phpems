@@ -1,0 +1,291 @@
+		<div class="pagecontent" id="exam-paper-swiper">
+			<header class="container-fluid" style="background-color:#337AB7;">
+				<h5 class="text-center">
+					<em style="font-size:2rem;" class="pull-left glyphicon glyphicon-chevron-left" onclick="javascript:$.goPrePage();"></em>
+					试卷1					<em style="font-size:2rem;" class="pull-right glyphicon glyphicon-home" onclick="javascript:$.goPage('#page1');"></em>
+				</h5>
+			</header>
+			<div class="container-fluid" style="margin-bottom:2.5rem;">
+				<div class="row-fluid">
+					<div class="col-xs-12" id="questionbar" style="display:none;">
+						<dl class="clear" id="questionindex">
+																																																															<dt class="float_l"><h4 class="title">一、单选题</h4></dt>
+							<dd class="tableindex">
+												                				                				                								<a style="margin-bottom:0.5rem;" id="sign_1" href="javascript:;" onclick="javascript:$.leftMenu($('#questionbar'));gotoquestion('1');$('#form1').toggle();" class="btn btn-default">1</a>
+												                				                								<a style="margin-bottom:0.5rem;" id="sign_2" href="javascript:;" onclick="javascript:$.leftMenu($('#questionbar'));gotoquestion('2');$('#form1').toggle();" class="btn btn-default">2</a>
+																							</dd>
+																																																																																																																																											</dl>
+					</div>
+					<form id="form1" name="form1" method="post" action="index.php?exam-phone-exam-score" class="col-xs-12" style="padding:0px;">
+						<input type="hidden" name="insertscore" value="1"/>
+																																																<h4 class="title questionpanel" id="questype_1">一、单选题</h4>
+								                		                		                						<div class="paperexamcontent" id="questions_1" rel="1" style="clear:both;overflow:hidden;background:#FFFFFF;margin-top:0.5rem;padding:1rem;">
+							<h4 class="title">
+								第1题
+								<span class="pull-right">
+									<a class="btn text-info qicon" href="javascript:;" onclick="javascript:signQuestion('1',this);"><i class="glyphicon glyphicon-bookmark"></i></a>
+									<a name="question_1">
+									<input id="time_1" type="hidden" name="time[1]"/>
+								</span>
+							</h4>
+							<div class="choice">
+								</a><p>1+1</p>							</div>
+																					<div class="choice" style="padding-bottom:0.5rem;">
+		                    	<p>1</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>4</p>		                    </div>
+		                    							<div class="selector">
+		                    				                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[1]" rel="1" value="A" />A </label>
+			                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[1]" rel="1" value="B" />B </label>
+			                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[1]" rel="1" value="C" />C </label>
+			                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[1]" rel="1" value="D" />D </label>
+			                        			                        			                        			                    		                    </div>
+														<div class="toolbar" style="padding:1rem 0.5rem;margin-bottom:4rem;">
+																								<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(1);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+															</div>
+						</div>
+								                		                						<div class="paperexamcontent" id="questions_2" rel="1" style="clear:both;overflow:hidden;background:#FFFFFF;margin-top:0.5rem;padding:1rem;">
+							<h4 class="title">
+								第2题
+								<span class="pull-right">
+									<a class="btn text-info qicon" href="javascript:;" onclick="javascript:signQuestion('2',this);"><i class="glyphicon glyphicon-bookmark"></i></a>
+									<a name="question_2">
+									<input id="time_2" type="hidden" name="time[2]"/>
+								</span>
+							</h4>
+							<div class="choice">
+								</a><p>1+2</p>							</div>
+																					<div class="choice" style="padding-bottom:0.5rem;">
+		                    	<p>1</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>&nbsp;</p>		                    </div>
+		                    							<div class="selector">
+		                    				                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[2]" rel="2" value="A" />A </label>
+			                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[2]" rel="2" value="B" />B </label>
+			                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[2]" rel="2" value="C" />C </label>
+			                        			                        			                        <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[2]" rel="2" value="D" />D </label>
+			                        			                        			                        			                    		                    </div>
+														<div class="toolbar" style="padding:1rem 0.5rem;margin-bottom:4rem;">
+																<a class="btn btn-default" onclick="javascript:gotoindexquestion(0);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																							</div>
+						</div>
+																																																																																																																																			</form>
+				</div>
+			</div>
+			<div class="container-fluid text-center" style="background-color:#337AB7;z-index:9999;position:fixed;bottom:0px;border-top:1px solid #E9E9E9;">
+				<div style="clear:both;background-color:#337AB7;padding-top:0px;border:0px;padding:0rem;padding-bottom:0.8rem;" class="input-group-addon footer">
+					<div class="col-xs-3">
+						<div class="text-center" style="height:4.2rem;padding:0.2rem;">
+							<a href="javascript:;" onclick="javascript:$.leftMenu($('#questionbar'));$('#form1').toggle();">
+								<h5 style="line-height:3.2rem;color:#FFFFFF;"><em class="glyphicon glyphicon-th"></em> 题序</h5>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="text-center" style="height:4.2rem;padding:0.2rem;">
+							<a href="index.php?item-phone-cart" class="ajax" data-page="cart" data-target="cart">
+								<h4 style="line-height:3.2rem;color:#FFFFFF;"><em class="glyphicon glyphicon-time"></em> <span id="timer_h">00</span><span>：</span><span id="timer_m">00</span><span>：</span><span id="timer_s">00</span></h4>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="text-center" style="height:4.2rem;padding:0.2rem;">
+							<a href="#submodal" onclick="javascript:$('#submodal').appendTo('body');" role="button" data-toggle="modal">
+								<h5 style="line-height:3.2rem;color:#FFFFFF;"><em class="glyphicon glyphicon-list-alt"></em> 交卷</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="submodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">交卷</h4>
+						</div>
+						<div class="modal-body">
+							<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" onclick="javascript:submitPaper();" class="btn btn-primary">确定交卷</button>
+							<button aria-hidden="true" class="btn" type="button" data-dismiss="modal">再检查一下</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+			var qindex = 0;
+			function gotoquestion(questid)
+			{
+				$(".questionpanel").hide();
+				$(".paperexamcontent").hide();
+				$("#questions_"+questid).show();
+				$("#questype_"+$("#questions_"+questid).attr('rel')).show();
+			}
+			function gotoindexquestion(index)
+			{
+                qindex = index;
+			    $(".questionpanel").hide();
+				$(".paperexamcontent").hide();
+				$(".paperexamcontent").eq(index).show();
+				$("#questype_"+$(".paperexamcontent").eq(index).attr('rel')).show();
+			}
+			$(document).ready(function(){
+				$('#exam-paper-swiper').on('swiperight',function(){
+                    if(qindex >= 1){
+                        gotoindexquestion(--qindex);
+                    }
+                });
+                $('#exam-paper-swiper').on('swipeleft',function(){
+                    if(qindex < ($('#exam-paper-swiper .paperexamcontent').length-1)){
+                        gotoindexquestion(++qindex);
+                    }
+                });
+			    $.get('index.php?exam-phone-index-ajax-lefttime&rand'+Math.random(),function(data){
+					var setting = {
+						                                                time:60,
+                                                						hbox:$("#timer_h"),
+						mbox:$("#timer_m"),
+						sbox:$("#timer_s"),
+						finish:function(){
+							submitPaper();
+						}
+					}
+					setting.lefttime = parseInt(data);
+					countdown(setting);
+				});
+
+				(function(){
+					$(".questionpanel").hide();
+					$(".questionpanel:first").show();
+					$(".paperexamcontent").hide();
+					$(".paperexamcontent:first").show();
+				})();
+
+				setInterval(saveanswer,120000);
+
+				initData = $.parseJSON(storage.getItem('questions'));
+				if(initData){
+					for(var p in initData){
+						if(p!='set')
+						formData[p]=initData[p];
+						$("#time_"+$('[name="'+p+'"]').attr('rel')).val(initData[p].time);
+					}
+
+					var textarea = $('#form1 textarea');
+					$.each(textarea,function(){
+						var _this = $(this);
+						if(initData[_this.attr('name')])
+						{
+							_this.val(initData[_this.attr('name')].value);
+							batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+						}
+					});
+					var texts = $('#form1 :input[type=text]');
+					$.each(texts,function(){
+						var _this = $(this);
+						if(initData[_this.attr('name')])
+						{
+							_this.val(initData[_this.attr('name')]?initData[_this.attr('name')].value:'');
+							if(initData[_this.attr('name')].value && initData[_this.attr('name')].value != '')
+							batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+						}
+					});
+
+					var radios = $('#form1 :input[type=radio]');
+					$.each(radios,function(){
+						var _= this, v = initData[_.name]?initData[_.name].value:null;
+						var _this = $(this);
+						if(v!=''&&v==_.value){
+							_.checked = true;
+							batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+						}else{
+							_.checked=false;
+						}
+					});
+
+					var checkboxs=$('#form1 :input[type=checkbox]');
+					$.each(checkboxs,function(){
+						var _=this,v=initData[_.name]?initData[_.name].value:null;
+						var _this = $(this);
+						if(v!=''&&v==_.value){
+							_.checked=true;
+							batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+						}else{
+							_.checked=false;
+						}
+					});
+				}
+
+				$('#form1 :input[type=text]').change(function(){
+					var _this=$(this);
+					var p=[];
+					p.push(_this.attr('name'));
+					p.push(_this.val());
+					p.push(Date.parse(new Date())/1000);
+					$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+					set.apply(formData,p);
+					markQuestion(_this.attr('rel'),true);
+				});
+
+				$('#form1 :input[type=radio]').change(function(){
+					var _=this;
+					var _this=$(this);
+					var p=[];
+					p.push(_.name);
+					if(_.checked){
+						p.push(_.value);
+						p.push(Date.parse(new Date())/1000);
+						$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+						set.apply(formData,p);
+					}else{
+						p.push('');
+						p.push(null);
+						set.apply(formData,p);
+					}
+					markQuestion(_this.attr('rel'));
+				});
+
+				$('#form1 textarea').change(function(){
+					var _= this;
+					var _this=$(this);
+					var p=[];
+					p.push(_.name);
+					p.push(_.value);
+					p.push(Date.parse(new Date())/1000);
+					$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+					set.apply(formData,p);
+					markQuestion(_this.attr('rel'),true);
+				});
+				$('#form1 :input[type=checkbox]').change(function(){
+					var _= this;
+					var _this = $(this);
+					var p=[];
+					p.push(_.name);
+					if(_.checked){
+						p.push(_.value);
+						p.push(Date.parse(new Date())/1000);
+						$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+						set.apply(formData,p);
+					}else{
+						p.push('');
+						p.push(null);
+						set.apply(formData,p);
+					}
+					markQuestion(_this.attr('rel'));
+				});
+				$('.allquestionnumber').html($('.paperexamcontent').length);
+				$('.yesdonumber').html($('#questionindex .btn-primary').length);
+			});
+			</script>
+		</div>
+	
